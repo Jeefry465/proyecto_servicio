@@ -1,0 +1,18 @@
+package com.example.webb.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TestController {
+
+    @GetMapping("/test")
+    public String test() {
+        return "Funciona con webb";
+    }
+
+    @GetMapping("/")
+    public String home() {
+        return "API con paquete webb funcionando";
+    }
+}
